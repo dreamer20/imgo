@@ -1,0 +1,246 @@
+.checked:after {
+  content: " \2713";
+}
+
+.img-box {
+  float: left;
+  position: relative;
+}
+
+.img-container {
+  margin-top: 70px;
+}
+
+.img-review {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1999;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.img-review-body {
+  position: relative;
+  height: 100%;
+}
+
+.img-view {
+  margin-right: 250px;
+  height: 100%;
+}
+
+.img-info {
+  height: 100%;
+  background: #007bff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  padding: 45px 0 0 0;
+}
+
+.review-image {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-review-close-btn {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  right: 15px;
+  top: 15px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 9999;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: all .15s ease-in-out;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.img-review-close-btn span {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-review-close-btn:hover {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+.resolution {
+  font-size: 20px;
+  color: #fff;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-name {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.img-info-row-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.img-ref:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: all .2s linear;
+  content: "";
+
+}
+
+.img-box:hover .img-ref:before {
+  background: rgba(0, 0, 0, .3);
+}
+
+
+@media screen and (max-width: 992px) {
+  .imgContainer {
+    margin-top: 56px;
+  }
+
+  .img-view {
+    width: 100%;
+  }
+
+  .img-review-body {
+    overflow: auto;
+  }
+
+  .img-info-row {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .img-info {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 0 0 0;
+  }
+}
+
+.loader {
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+}
+
+.loader .rect-rv2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50%;
+}
+
+ .loader .rect-rv2:before {
+  top: -40px;
+}
+
+ .loader .rect-rv2:after {
+  top: 40px;
+}
+
+ .loader .rect-rv2:before, .loader .rect-rv2:after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.loader .rect-rv2 {
+  height: 15px;
+  width: 15px;
+}
+
+.loader .rect-rv2:before, .loader .rect-rv2:after {
+  height: 15px;
+  width: 15px;
+  border-radius: 20%;
+}
+
+.loader .rect-rv2:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.loader .rect-rv2:nth-child(1):before, .loader .rect-rv2:nth-child(1):after {
+  transform: scale(0.9);
+  background: rgba(0, 86, 255, 0.6);
+}
+
+.loader .rect-rv2:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.loader .rect-rv2:nth-child(2):before, .loader .rect-rv2:nth-child(2):after {
+  transform: scale(0.8);
+  background: rgba(0, 86, 255, 0.5);
+}
+
+.loader .rect-rv2:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+.loader .rect-rv2:nth-child(3):before, .loader .rect-rv2:nth-child(3):after {
+  transform: scale(0.7);
+  background: rgba(0, 86, 255, 0.4);
+}
+
+.loader .rect-rv2:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.loader .rect-rv2:nth-child(4):before, .loader .rect-rv2:nth-child(4):after {
+  transform: scale(0.6);
+  background: rgba(0, 86, 255, 0.3);
+}
+
+.loader .rect-rv2:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(-120deg);
+}
+
+.loader .rect-rv2:nth-child(5):before, .loader .rect-rv2:nth-child(5):after {
+  transform: scale(0.5);
+  background: rgba(0, 86, 255, 0.2);
+}
+
+.loader .rect-rv2:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(-150deg);
+}
+
+.loader .rect-rv2:nth-child(6):before, .loader .rect-rv2:nth-child(6):after {
+  transform: scale(0.4);
+  background: rgba(0, 86, 255, 0.1);
+}
+
+#loader-rect-rv2 {
+  animation: rotation 0.8s steps(12, start) infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translateX(-50%) rotate(0);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
