@@ -34,7 +34,15 @@ let dropdownTitles = ['Порядок','Тип', 'Ориентация', 'Кат
       "all": "Все",
       "nature": 'Природа',
       "animals": 'Животные',
-      "music": 'Музыка'
+      "music": 'Музыка',
+      "sports": 'Спорт',
+      "travel": 'Путешетвия',
+      "business": 'Бизнес',
+      "religion": 'Религия',
+      "science": 'Наука',
+      "places": 'Места',
+      "buildings": 'Строения',
+      "transportation": 'Транспорт'
     }
 class App extends Component {
   constructor(props) {
