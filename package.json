@@ -2,6 +2,7 @@
   "name": "imgo",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://dreamer20.github.io/imgo",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "immutability-helper": "^2.6.4",
